@@ -46,6 +46,11 @@ a:focus {
     color: #000000;
 }
 
+h1, h2, p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 h1 {
     font-size: 60px;
     font-weight: 300;
@@ -167,12 +172,31 @@ p.lead {
     color: #998a9b;
 }
 
-@media (max-width:767px) {
+/* Atur List (<li>) agar tidak terlalu mepet */
+ul, ol {
+    padding-left: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 90%;
+}
+
+li {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Media Query agar lebih responsif di HP */
+@media (max-width: 767px) {
     h1 {
         font-size: 40px;
     }
     h2 {
         font-size: 30px;
+    }
+    h1, h2, p, ul, ol {
+        margin-left: 7%;
+        margin-right: 7%;
     }
 }
 
@@ -447,7 +471,7 @@ header {
 }
 
 .blockquote {
-    color: #7a767a;
+    color: #000000;
     font-weight: 300;
 }
 
